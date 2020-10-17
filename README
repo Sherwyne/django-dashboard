@@ -1,0 +1,39 @@
+manage.py
+    -runserver
+    -createsuperuser
+    -makemigrations (every update of models)
+    -migrate
+
+adding model to admin
+    -import model
+    -admin.site.register(Customer)
+
+templates
+    -create templates folder inside the app then create a subdirectory with <app-name>
+    -{% extends 'app/sample.html' %}
+    -{% include <path> % }
+
+static files 
+    -create a static folder in root directory
+    -STATICFILES_DIR
+    -os.path.join(BASE_DIR, 'static')
+    -{% load static %}
+    -{% static 'path' %}
+
+Forms
+    -create forms.py in root directory
+    -create a model with class meta model and fields
+    -create form template with csrf token 
+    -update urls.py
+    -create form view
+
+FLOW
+    -url path and views with render
+    -templates
+    -static files and settings
+    -admin and superuser
+    -models
+    -adding queries to views.py
+    -adding data to templates
+
+https://www.youtube.com/watch?v=MRWFg30FmZQ&list=PL-51WBLyFTg2vW-_6XBoUpE7vpmoR3ztO&index=12
