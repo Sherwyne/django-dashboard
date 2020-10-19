@@ -26,6 +26,7 @@ Forms
     -create form template with csrf token 
     -update urls.py
     -create form view
+Modal Forms - https://pypi.org/project/django-bootstrap-modal-forms/
 
 FLOW
     -url path and views with render
